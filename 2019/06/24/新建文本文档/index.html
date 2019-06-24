@@ -10,7 +10,7 @@
     
     
     
-    <title>about | AO&#39;s blog</title>
+    <title>AO&#39;s blog</title>
     <link href="”http://yoursite.com“" rel="”prefetch”">
 
     <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -153,7 +153,7 @@
                 
                 
                 
-                <li class="current">
+                <li class="">
                     <a href="/about">
                         <i class="fa fa-user"></i>关于我
                     </a>
@@ -184,21 +184,27 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8 gal-right" id="mainstay">
-                    <!-- 搜索页面(尽可能接近ZanBlog搜索功能) -->
-
-
+                    
 <article class="article well article-body" id="article">
+    <div class="breadcrumb">
+        <i class="fa fa-home"></i>
+        <a href="http://yoursite.com">AO&#39;s blog</a>
+        >
+        <span></span>
+    </div>
     <!-- 大型设备详细文章 -->
     <div class="hidden-xs">
         <div class="title-article">
             <h1>
-                <a href="/about/index.html">about</a>
+                <a href="/2019/06/24/新建文本文档/"></a>
             </h1>
         </div>
         <div class="tag-article">
+            
             <span class="label label-gal">
-                <i class="fa fa-calendar"></i> 2019-06-21
+                <i class="fa fa-calendar"></i> 2019-06-24
             </span>
+            
         </div>
     </div>
     <!-- 小型设备详细文章 -->
@@ -206,29 +212,35 @@
         <center>
             <div class="title-article">
                 <h4>
-                    <a href="/about/index.html">about</a>
+                    <a href="/2019/06/24/新建文本文档/"></a>
                 </h4>
             </div>
             <p>
-                <i class="fa fa-calendar"></i> 2019-06-21
+                <i class="fa fa-calendar"></i> 2019-06-24
+            </p>
+            <p>
+                
+                
             </p>
         </center>
     </div>
     <div class="content-article">
-        <h1 id="AO956"><a href="#AO956" class="headerlink" title="AO956"></a>AO956</h1><p><strong>自我标签：oi蒟蒻；死宅；月莫法师；公知；esu小鬼；inm民；德棍；FPS爱好者；Galgame玩家；hentai</strong>；</p>
-<hr>
-<h2 id="话题："><a href="#话题：" class="headerlink" title="话题："></a>话题：</h2><p><strong>·ACGN的内容</strong></p>
-<p><strong>·计算机技术交流，<del>啥也不会</del></strong></p>
-<p><strong>·时间研究与包子的乳化</strong></p>
-<p><strong>·游戏（指3A大作与gal，不包括鹅厂猪厂）</strong></p>
-<p><strong>·二战史与第三帝国的兴衰</strong></p>
-<p><strong>·其他各大亚文化（不包括车万）</strong></p>
-<hr>
-<h3 id="联系方式："><a href="#联系方式：" class="headerlink" title="联系方式："></a>联系方式：</h3><p><strong>·QQ：496636173</strong></p>
-<p><strong>·Twitter：AO956</strong></p>
-<p><strong>·屑站：<a href="http://space.bilibili.com/244264130/" target="_blank" rel="noopener">AO956_</a>   <del>并没有什么作品</del></strong></p>
-<p><strong>·Github：<a href="https://github.com/AO956" target="_blank" rel="noopener">AO956</a></strong></p>
-<p><strong>·steam：AO956</strong></p>
+        <p>典型的同余方程。由于是纬线，绕一圈是可以绕回来的，所以是可以取模的。</p>
+<p>　　阅读题目，很容易得到同余方程x+tm≡y+tn(mod L)x+tm≡y+tn(mod L)</p>
+<p>　　于是我们可以通过Exgcd来求解。先转化为不定方程 x+tm−y−tn=sLx+tm−y−tn=sL</p>
+<p>　　整理得 (m−n)t−Ls=y−x(m−n)t−Ls=y−x</p>
+<p>　　设 a=n−m,b=L,c=x−ya=n−m,b=L,c=x−y，代入可得 −at−bs=−c−at−bs=−c，即 at+bs=cat+bs=c</p>
+<p>　　因此通过先求解 at+bs=gcd(a,b)at+bs=gcd(a,b)，最后就能够解得一组特解了。转化成最小正整数解即可。</p>
+<p>　　然而要处理的事情还有很多。首先我们来想如何得到最小正整数解。</p>
+<p>　　设答案为xx，我们得到的特解为x0x0，则根据我们的公式一定有 x0=x+k∗b/gcd(a,b)x0=x+k∗b/gcd(a,b)。我们可以把它看做出发的形式，即x=x0%(b/gcd(a,b))x=x0%(b/gcd(a,b))。</p>
+<p>　　因此我们的答案就是x%(b/gcd(a,b))x%(b/gcd(a,b)) …… ？ 万一x≤0x≤0？我们的答案应该是 (x+(b/gcd(a,b))%(b/gcd(a,b)(x+(b/gcd(a,b))%(b/gcd(a,b)，防止爆负数。</p>
+<p>　　但是考虑一下b/gcd(a,b)与a,bb/gcd(a,b)与a,b的符号，若a,ba,b同号那没事，如果a,ba,b异号且a&lt;0,b&gt;0a&lt;0,b&gt;0，那么情况就有点麻烦了……… gcd(a,b)gcd(a,b)肯定小于0，而b&gt;0b&gt;0，所以 b/gcd(a,b)b/gcd(a,b) 一定小于0，因此按照这样的做法，答案不仅无法变成最小正整数解，反而更小了……</p>
+<p>　　有没有一种方法来避免a&lt;0,b&gt;0a&lt;0,b&gt;0这种情况呢？</p>
+<p>　　考虑可不可以永远保持aa为正数。</p>
+<p>　　ax+by=cax+by=c 与 −ax+by=−c−ax+by=−c的解是否完全一样？</p>
+<p>　　乍一眼看不出来，可以转化为同余方程的形式，那么前者就能够变成c≡ax(mod b)c≡ax(mod b)，后者就能够变成ax≡c(mod b)ax≡c(mod b)。看来是完全一样的。</p>
+<p>　　因此当a&lt;0a&lt;0时，aa和cc转换成相反数就可以了。<br>$$</p>
+<p>$$</p>
 
     </div>
 </article>
@@ -239,10 +251,9 @@
 <script>
 	if(!window.commentConfig) {
       window.commentConfig = {}
-      window.commentConfig.title = 'about'
+      window.commentConfig.title = ''
     }
 </script>
-
 
                 </div>
                 <aside class="col-md-4 gal-left" id="sidebar">
@@ -300,7 +311,13 @@
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="/2019/06/24/洛谷P1516：青蛙的约会/">洛谷P1516：青蛙的约会</a>
+                    <a href="/2019/06/24/新建文本文档/"></a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2019/06/24/洛谷P1516：青蛙的约会/"></a>
                 </span>
             </li>
             
@@ -328,13 +345,19 @@
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="/2019/06/24/洛谷P3884-二叉树问题/">洛谷P3884:二叉树问题</a>
+                    <a href="/2019/06/24/洛谷P1516：青蛙的约会/"></a>
                 </span>
             </li>
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="/2019/06/24/洛谷P1516：青蛙的约会/">洛谷P1516：青蛙的约会</a>
+                    <a href="/2019/06/24/新建文本文档/"></a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2019/06/24/洛谷P3884-二叉树问题/">洛谷P3884:二叉树问题</a>
                 </span>
             </li>
             
@@ -349,12 +372,12 @@
 
                 
                 <li>
-                    <a href="/about/index.html#sidebar-tags" data-toggle="tab" id="tags-tab">热门标签</a>
+                    <a href="/2019/06/24/新建文本文档/index.html#sidebar-tags" data-toggle="tab" id="tags-tab">热门标签</a>
                 </li>
                 
                 
                 <li>
-                    <a href="/about/index.html#sidebar-friend-links" data-toggle="tab" id="friend-links-tab">友情链接</a>
+                    <a href="/2019/06/24/新建文本文档/index.html#sidebar-friend-links" data-toggle="tab" id="friend-links-tab">友情链接</a>
                 </li>
                 
                 
@@ -363,7 +386,7 @@
                 
                 <div class="cloud-tags tab-pane nav bs-sidenav fade" id="sidebar-tags">
     
-    <a href="/tags/蒟蒻题解/" style="font-size: 17.300636813624422px;" class="tag-cloud-link">蒟蒻题解</a>
+    <a href="/tags/蒟蒻题解/" style="font-size: 14.425428458587737px;" class="tag-cloud-link">蒟蒻题解</a>
     
 </div>
                 
@@ -461,7 +484,7 @@
 <script src="https://myau.moe/js/comment/gitment.browser.js"></script>
 <script>
     if(window.commentConfig) {
-      window.commentConfig.id = 'Fri Jun 21 2019 10:41:41 GMT+0800'
+      window.commentConfig.id = 'Mon Jun 24 2019 14:57:42 GMT+0800'
       window.commentConfig.owner = ''
       window.commentConfig.repo = ''
       window.commentConfig.client_id = ''
@@ -469,7 +492,7 @@
       window.commentConfig.redirect_uri = ''
     } else {
       window.commentConfig = {
-      	id: 'Fri Jun 21 2019 10:41:41 GMT+0800',
+      	id: 'Mon Jun 24 2019 14:57:42 GMT+0800',
         owner: '',
         repo: '',
         client_id: '',
