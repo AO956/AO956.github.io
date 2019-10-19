@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>洛谷P1107:雷涛的小猫</title>
+      <link href="/2019/06/25/%E6%B4%9B%E8%B0%B7P1107-%E9%9B%B7%E6%B6%9B%E7%9A%84%E5%B0%8F%E7%8C%AB/"/>
+      <url>/2019/06/25/%E6%B4%9B%E8%B0%B7P1107-%E9%9B%B7%E6%B6%9B%E7%9A%84%E5%B0%8F%E7%8C%AB/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="先看原题：雷涛的小猫"><a href="#先看原题：雷涛的小猫" class="headerlink" title="先看原题：雷涛的小猫"></a>先看原题：<a href="https://www.luogu.org/problemnew/show/P1107" target="_blank" rel="noopener">雷涛的小猫</a></h2><h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>雷涛同学非常的有爱心，在他的宿舍里，养着一只因为受伤被救助的小猫(当然，这样的行为是违反学生宿舍管理条例的)。在他的照顾下，小猫很快恢复了健康，并且愈发的活泼可爱了。</p><p>可是有一天，雷涛下课回到寝室，却发现小猫不见了！经过一番寻找，才发现她正趴在阳台上对窗外的柿子树发呆…</p><p>在北京大学的校园里，有许多柿子树，在雷涛所在的宿舍楼前，就有N棵。并且这N棵柿子树每棵的高度都是H。冬天的寒冷渐渐笼罩了大地，树上的叶子渐渐掉光了，只剩下一个个黄澄澄的柿子，看着非常喜人。而雷涛的小猫恰好非常的爱吃柿子，看着窗外树上的柿子，她十分眼馋，于是决定利用自己敏捷的跳跃能力跳到树上去吃柿子。</p><p>小猫可以从宿舍的阳台上跳到窗外任意一棵柿子树的树顶。之后，她每次都可以在当前位置沿着当前所在的柿子树向下跳11单位距离。当然，小猫的能力远不止如此，她还可以在树之间跳跃。每次她都可以从当前这棵树跳到另外的任意一棵，在这个过程中，她的高度会下降<code>Delta</code>单位距离。每个时刻，只要她所在的位置有柿子，她就可以吃掉。整个“吃柿子行动”一直到小猫落到地面上为止。</p><p>雷涛调查了所有柿子树上柿子的生长情况。他很想知道，小猫从阳台出发，最多能吃到多少柿子？他知道写一个程序可以很容易的解决这个问题，但是他现在懒于写任何代码。于是，现在你的任务就是帮助雷涛写一个这样的程序。</p><p>图为N=3, H=10, Delta=2<em>N</em>=3,<em>H</em>=10,Delta=2的一个例子。小猫按照图示路线进行跳跃，可以吃到最多的88个柿子</p><p><img src="https://s2.ax1x.com/2019/06/25/ZVrJUK.jpg" alt></p><h2 id="输入输出格式"><a href="#输入输出格式" class="headerlink" title="输入输出格式"></a>输入输出格式</h2><p><strong>输入格式：</strong></p><p>第一行有三个以空格分隔的整数，分别代表N,H,Delta<em>N</em>,<em>H</em>,<em>D<strong>e</strong>l<strong>t</strong>a</em></p><p>接下来的N<em>N</em>行，每行第一个整数为N_i<em>N**i</em>，代表第i棵树上的柿子数量。</p><p>接下来是N_i<em>N**i</em>个整数，每个整数Tij代表第i棵柿子树的T_{ij}<em>T<strong>i</strong>j</em>高度上长有一个柿子。</p><p><strong>输出格式：</strong></p><p>一个整数，即小猫最多吃到的柿子数。</p><h2 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h2><p><img src="https://s2.ax1x.com/2019/06/25/ZVr5bq.png" alt></p><hr><p>emmmm……</p><p><img src="https://s2.ax1x.com/2019/06/25/ZVrjM9.jpg" alt></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 蒟蒻题解 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>洛谷P1516：青蛙的约会</title>
       <link href="/2019/06/24/%E6%B4%9B%E8%B0%B7P1516%EF%BC%9A%E9%9D%92%E8%9B%99%E7%9A%84%E7%BA%A6%E4%BC%9A/"/>
       <url>/2019/06/24/%E6%B4%9B%E8%B0%B7P1516%EF%BC%9A%E9%9D%92%E8%9B%99%E7%9A%84%E7%BA%A6%E4%BC%9A/</url>
